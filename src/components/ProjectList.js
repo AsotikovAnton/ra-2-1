@@ -14,7 +14,7 @@ export default function ProjectList(props) {
   return (
     <div className="project-list">
       {projectColumn.map(o => <div className="column">
-        {o.map(a => <img src={a.img} />)}
+        {o.map(a => <img src={a.img} alt="picture"/>)}
       </div>)}
     </div>
   );
