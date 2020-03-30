@@ -8,8 +8,8 @@ export default function Toolbar(props) {
 console.log(props);
   return (
     <div className="filter">
-      {filters.map(o => {
-        return <div onClick={onSelectFilter} className={o===selected && "active"}>{o}</div>
+      {filters.map(filter => {
+        return <div onClick={onSelectFilter} className={filter === selected && "active"}>{filter}</div>
       })}
     </div>
   )
